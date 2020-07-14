@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -17,8 +17,8 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+              <a class="nav-link" href="#AboutData">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Skills</a>
@@ -38,51 +38,192 @@
     
       </div>
 
-      <div class="container">
+      <div class="container" id="alter">
         <div class="row">
             <div class="col">
-                <div class="AboutData">
+                <div id="AboutData">
                     <div class="card bg-white">
                         <div class="card-title my-5">
-                            <div class="media">
-                                <img src="./img/sumit.jpg" alt="sumit" width="250" height="250" class="img-fluid rounded-top mx-5 ">
-                                <div class="media-body">
-                                  <h3 class="display-4">I am Sumit</h3>
-                                  <p class="text-muted">Programmer</p> 
-                                  <div class="">
-                                    <table class="table table-responsive">
-                                      <tr>
-                                        <td class="text-muted">Age</td>
-                                        <td>:</td>
-                                        <td>22</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="text-muted">Email</td>
-                                        <td>:</td>
-                                        <td>sharmasumit0308@gmail.com</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="text-muted">Phone</td>
-                                        <td>:</td>
-                                        <td>7602489582</td>
-                                      </tr>
-                                    </table>
-                                  </div>
+                            <div class="media"> 
+                               <img src="./img/sumit.jpg" alt="sumit" width="250" height="250" class="img-fluid rounded-top mx-5">
+                               <div class="media-body">
+                                <h3 class="display-4">I am Sumit</h3>
+                                <p class="text-muted">Programmer</p> 
+                                <div class="container">
+                                  <table class="table table-responsive">
+                                    <tr>
+                                      <td class="text-muted">Age</td>
+                                      <td>:</td>
+                                      <td>22</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Email</td>
+                                      <td>:</td>
+                                      <td>sharmasumit0308@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Phone</td>
+                                      <td>:</td>
+                                      <td>7602489582</td>
+                                    </tr>
+                                  </table>
                                 </div>
+                              </div>
+                           </div>
+                          
                             </div>
                         </div>
-                        <div class="card-footer bg-primary">
-                          <a href="#"> <i class="fa fa-facebook fa-2x mx-3"></i></a>                          
-                          <a href="#"> <i class="fa fa-twitter fa-2x mx-3"></i></a>
-                          <a href="#"> <i class="fa fa-youtube fa-2x mx-3"></i></a>
-                          <a href="#"> <i class="fa fa-github fa-2x mx-3"></i></a>
+                        <div class="card-footer bg-danger ">
+                              <a href="#"> <i class="fa fa-facebook fa-2x mx-3"></i></a>                          
+                              <a href="#"> <i class="fa fa-twitter fa-2x mx-3"></i></a>
+                              <a href="#"> <i class="fa fa-youtube fa-2x mx-3"></i></a>
+                              <a href="#"> <i class="fa fa-github fa-2x mx-3"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col">
+              <span class="bg-danger abt text-white">About me</span><hr class="bg-danger hr">
+              <p >Lived in Kharagpur, West Bengal. Currently pursuing Master of Computer Application from Lovely Professional University. 
+                Had Done Graduation in Bachelor of Computer Application from Vidyasagar University. Specialization in Full Stack Web Development.</p>
+            </div>
+          </div>
+        </div>
     </div>
 
+    <!-- Skills -->
+  <div id="Skill" class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <span class="bg-primary text-white abt">My Skills</span><hr  class="bg-primary hr">
+          <div class="card bg-white ">
+            <h3 class="my-3 mx-3">HTML</h3>
+            <div class="progress mx-3">
+              <div class="progress-bar" style="width: 85%;">85%</div>
+            </div>
+            <h3 class="my-3 mx-3">JavaScript</h3>
+            <div class="progress mx-3">
+              <div class="progress-bar" style="width: 75%;">75%</div>
+            </div>
+            <h3 class="my-3 mx-3">CSS</h3>
+            <div class="progress mx-3">
+              <div class="progress-bar" style="width: 85%;">85%</div>
+            </div>
+            <h3 class="my-3 mx-3">Java</h3>
+            <div class="progress mx-3">
+              <div class="progress-bar" style="width: 75%;">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div id="qualification">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <span class="bg-danger text-white abt">Qualifications</span><hr class="hr bg-danger">
+            <table class="table table-responsive bg-white table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th>
+                    Degree/Certificate
+                  </th>
+                  <th>
+                    Board/University
+                  </th>
+                  <th>
+                    School/College
+                  </th>
+                  <th>
+                    Year of Passing
+                  </th>
+                  <th>
+                    Percentage/CGPA
+                  </th>
+                </tr>
+              </thead>
+              
+              <tr>
+                <td>
+                  Master in Computer Application.
+                </td>
+                <td>
+                  Lovely Professional University
+                </td>
+                <td>
+                  Lovely Professional University
+                </td>
+                <td>
+                  2021
+                </td>
+                <td>
+                  8.75
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Bachelor in Computer Application.
+                </td>
+                <td>
+                  Vidyasagar University
+                </td>
+                <td>
+                  Hijli College
+                  
+                </td>
+                <td>
+                  2019
+                </td>
+                <td>
+                  68.2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12<sup>th</sup>
+                </td>
+                <td>
+                  CBSE
+                </td>
+                <td>
+                  Kendriya Vidyalaya No. 1(A.F.S.), K.K.D.
+                </td>
+                <td>
+                  2015
+                </td>
+                <td>
+                  66.3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10<sup>th</sup>
+                </td>
+                <td>
+                  CBSE
+                </td>
+                <td>
+                  Kendriya Vidyalaya No. 1(A.F.S.), K.K.D.
+                </td>
+                <td>
+                  2013
+                </td>
+                <td>
+                  83.6
+                </td>
+              </tr>
+            </table>
+                   
+        </div>
+      </div>
+    </div>
+  </div>
 
       <script src="./js/jquery.js"></script>
       <script src="./js/bootstrap.min.js"></script>

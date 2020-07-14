@@ -10,11 +10,20 @@ body{
 
 #banner{
     background: url("/img/laptop.jpg");
-    border: solid 2px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 500px;
 }
-.container{
+#alter{
     margin-top: -50px;
+}
+.fa{
+    color: whitesmoke;
+}
+.abt{
+    padding: 10px 20px 10px 20px;
+}
+.hr{
+    border-width: 3px;
+    margin-top: 06px;
 }
